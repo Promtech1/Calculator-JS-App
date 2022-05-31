@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/calc.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div class="calc">
+        
+            <button class="delete" onclick="buttonClick('C')">C</button>
+        
+            <div id="board" contenteditable ></div>
+        
+            <div class="buttons">
+        
+                <button onclick="buttonClick()" class="btn">7</button>
+                <button onclick="buttonClick()">8</button>
+                <button onclick="buttonClick()">9</button>
+        
+                <button class="operator" onclick="buttonClick('+')" >+</button>
+                <button onclick="buttonClick()">4</button>
+                <button onclick="buttonClick()">5</button>
+                <button onclick="buttonClick()">6</button>
+        
+                <button class="operator" onclick="buttonClick('-')">-</button>
+                <button onclick="buttonClick()">1</button>
+                <button onclick="buttonClick()">2</button>
+                <button onclick="buttonClick()">3</button>
+        
+                <button class="operator" onclick="buttonClick()">*</button>
+                <button onclick="buttonClick()">0</button>
+                <button onclick="buttonClick()">.</button>
+                <button class="eval" onclick="buttonClick()">=</button>
+                <button class="operator" onclick="buttonClick()">/</button>
+            </div>
+        </div>
+    </center>
+
+    <script src="/calc.js"></script>
+</body>
+</html>

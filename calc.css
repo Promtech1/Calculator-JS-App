@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Fresca');
+
+/* DIVS' STYLES */
+
+div.calc {
+    background-color: white;
+    border: solid 2px #83f774;
+    border-radius:10px;
+    box-shadow: 0px 6px 10px #83f774;
+    width: 400px;
+    padding: 10px;
+}
+
+div.buttons{
+    padding: 5px;
+    margin: 5px;
+    width: 400px;
+}
+
+div#board{
+    background-color: #ff5b5b;
+    border-radius: 5px;
+/*     box-shadow: 0px 0.1px 10px #ff3030; */
+    color: white;
+    font-family: 'Fresca';
+    font-weight: bold;
+    font-size: 25px;
+    text-align: right;
+    width: 380px;
+    height: 90px;
+    padding: 10px 5px 2px 5px;
+}
+
+/* BUTTONS' STYLES */
+button{
+    background-color: #83f774;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0.1px 0.01px #15b700;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Fresca';
+    margin-bottom: 5px;
+    width:80px;
+    height: 60px;
+    }
+
+/* eval, operator and clear buttons' styles*/
+button.eval{
+    background-color: #00def7;
+    box-shadow: 0px 3px 1px #008c82;
+}
+
+/*-----------------------------------*/
+button.operator{
+    background-color: #bbff56;
+    box-shadow: 0px 3px 1px #64a800;
+}
+
+/*--------------------------------------*/
+button.delete{
+    background-color: #ff5b5b;
+    box-shadow: 0px 2px 5px #960000;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    height:35px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width:35px;
+}
+
+/* button hover and click(active) styles */
+button:hover{
+/*     border-radius: 20px; */
+    opacity: 0.7;
+}
+
+button:active{
+    box-shadow: none;
+    transform: translateY(3px);
+}
+
+button:focus {outline:0;}/*geting rid of blue line on clicking button*/
