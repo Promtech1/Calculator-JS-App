@@ -9,12 +9,14 @@ div.calc {
     box-shadow: 0px 6px 10px #83f774;
     width: 400px;
     padding: 10px;
+    position: relative;
 }
 
 div.buttons{
     padding: 5px;
     margin: 5px;
     width: 400px;
+    
 }
 
 div#board{
@@ -24,11 +26,12 @@ div#board{
     color: white;
     font-family: 'Fresca';
     font-weight: bold;
-    font-size: 25px;
+    font-size: 3rem;
     text-align: right;
     width: 380px;
     height: 90px;
     padding: 10px 5px 2px 5px;
+    
 }
 
 /* BUTTONS' STYLES */
@@ -70,6 +73,9 @@ button.delete{
     padding-right: 10px;
     padding-left: 10px;
     width:35px;
+    position: absolute;
+    top: 4%;
+    left: 5%;
 }
 
 /* button hover and click(active) styles */

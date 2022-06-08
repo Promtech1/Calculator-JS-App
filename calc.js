@@ -1,15 +1,25 @@
 //selectors
-const buttons = document.querySelector(".buttons")
+const buttons = document.querySelector(".buttons").children
 const board = document.querySelector("#board")
+const allSymbols = ["+", "-", "*", "/", "=", "."]
 
 //Event Listeners
-buttons.addEventListener("click", buttonClick)
+
+let firstValue = ""
+let secondValue = ""
+let symbol = ""
 
 
 //Functions
-function buttonClick(e){
-    boards = [];
-    const item = e.target.innerText
-    boards.push(item)
-    board.textContent += item
+for(let button of buttons){
+    button.addEventListener("click", () => {
+        const{innerText : btnValue} = button
+        const btnValueIsSymbol = allSymbols.includes(btnValue)
+        
+        if(board.innerText){
+            
+            board.innerText += btnValue
+        }
+        
+    })
 }
